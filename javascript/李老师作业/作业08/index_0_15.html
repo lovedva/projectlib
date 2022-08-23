@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+
+		class Banma{
+			name;
+			age;
+			sex;
+			constructor(name,age,sex) {
+			   this.name = name;
+			   this.age = age;
+			   this.sex = sex;
+			}
+
+			toString(){
+				document.write(this.name + ":" + this.age + ":"+ this.sex + "<br/>");
+			}
+		}
+
+		// 少年，第7行 定了一个构造函数，利用这个构造函数可以 去 构建 指定对象结构。
+		// 我们来修改一个之前的例子。将之前例子中的动态创建对象的方式改为 利用构造函数创建。
+
+		function printObj(arr){
+			for(var i = 0;i < ???;i++){
+				???//这里是想输出对象的所有属性到网页，那么请你注意 Banma构造函数有一个toString的方法，是否利用这个方法呢？
+			}
+		}
+
+		var arr = [];
+
+		for(var i = 0;i < 2;i++){
+			var obj = ????
+			obj.name = prompt("请输入您的名字");
+			obj.age = prompt("请输入您的年龄");
+			obj.sex = prompt("请输入您的性别");
+
+			arr[i] = obj;
+		}
+
+		printObj(arr);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

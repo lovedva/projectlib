@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+		class Banma{
+			name;
+			age;
+			sex;
+		}
+
+		var arr = [];
+
+		for(var i = 0;i < 2;i++){
+			var obj = new Banma();
+			obj.name = prompt("请输入您的名字");
+			obj.age = prompt("请输入您的年龄");
+			obj.sex = prompt("请输入您的性别");
+
+			arr[i] = obj;
+		}
+
+
+		// 少年，仔细理解 上面 代码 做了什么事情。现在你就是代码局的特工，你需要破译以上代码做了什么业务逻辑。
+		// 特别是第15行 跟 20行。（思考15秒，想不明白看 30行的解答。）
+
+
+
+
+		// 然后，你应该明白 其实就是让用户输入了2个人的信息，并分别封装到了对象中，并将这些对象存储到了数组里面。
+		// 现在，你需要在下面 将 第7行 定义的数组 的 对象内容 都给循环遍历出来 输出到浏览器
+	</script>
+</head>
+<body>
+
+</body>
+</html>

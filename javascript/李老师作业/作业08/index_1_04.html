@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>纠错题</title>
+	<script type="text/javascript">
+		// 下面的代码是 斑马学生写的，请你修改其中的错误
+		// 这位同学想 利用 所学的 构造函数的方式去构造一个对象。结果发现有错误。请你解决。
+		
+		class Banma{
+			constructor(name) {
+			    this.name = name;
+			}
+
+			say(){
+				alert("我叫"+this.name);
+			}
+		}
+		
+
+		var banmaObj = new Banma("斑马先生");
+
+		// 同学想遍历对象的属性值，发现会报错，请解决该问题。
+		for(let p : banmaObj){
+			alert(banmaObj[p]);
+		}
+
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

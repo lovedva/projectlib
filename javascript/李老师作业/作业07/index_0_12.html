@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+
+		// 少年，第9行 专门定义了一个函数 来 将传入的对象数组中的对象内容给输出到浏览器
+		// 不过这个函数还需要你完善，完善后，最终效果是网页中能显示你输入的对象的内容
+		// 我们假定 传入的arr 是一个存储了对象的数组
+		function printObj(arr){
+			for(var i = 0;i < ???;i++){
+				???
+				document.write(obj.name + ":" + obj.age + ":"+ obj.sex + "<br/>");
+			}
+		}
+
+		var arr = [];
+
+		for(var i = 0;i < 2;i++){
+			var obj = new Object();
+			obj.name = prompt("请输入您的名字");
+			obj.age = prompt("请输入您的年龄");
+			obj.sex = prompt("请输入您的性别");
+
+			arr[i] = obj;
+		}
+
+
+		printObj(arr);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

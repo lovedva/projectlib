@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>请点击按钮来显示日期。</p>
+
+<button onclck="displayDate()">时间是？</button>
+
+<script>
+	// 请分析 为什么 点击 按钮以后 网页中并没有显示 时间信息
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html>

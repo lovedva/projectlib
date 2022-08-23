@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+
+		// 少年，我现在想让你理解 "引用" 的概念，请看下面代码，我们同时将banmaObj这个变量都赋值给了arr数组的第1个跟第2个位置。 
+		// 23行明明修改的是数组第 1 个位置对象的值，可是25行输出第 2 位置的值，却改变了。
+		// 能理解吗？ 请将你的理解 以 注释的形式 写道下面。另外这道题目仅需理解，不需要做任何改动
+
+		class Banma{
+			name;
+		}
+
+		var banmaObj = new Banma();
+		banmaObj.name = "斑马先生";
+
+		var arr = [];
+
+		arr[0] = banmaObj;
+		arr[1] = banmaObj;
+
+		arr[0].name = "斑马学生";
+
+		document.write(arr[1].name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

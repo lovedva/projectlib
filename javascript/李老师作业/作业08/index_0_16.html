@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+		//少年，你看下面的Banma这个类，在9-11行申明了3个属性值，我们一般也称呼为 成员属性。这个语法是没有问题的。
+		// 我主要是想告诉你，13-15行的this.name其实就是给 第9行的name赋值。但是，你可能也发现了，有的时候，并没有事先申明9-11行的属性。这也是可以的，因为可以动态创建。
+		class Banma{
+			name;
+			age;
+			sex;
+			constructor(name,age,sex) {
+			   this.name = name;
+			   this.age = age;
+			   this.sex = sex;
+			}
+
+			toString(){
+				document.write(this.name + ":" + this.age + ":"+ this.sex + "<br/>");
+			}
+		}
+
+		banmaObj = new Banma();
+
+		// 请分析15行代码执行后，为什么弹出来的值是undefined
+		alert(banmaObj.name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

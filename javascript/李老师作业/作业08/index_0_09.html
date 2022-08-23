@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+		// 以下代码想 将 数组中存储的对象中的name跟age值给取出来。结果发现预想中不一样（报错）
+		// 请你分析原因，然后修改解决该问题。
+		class Banma{
+			name;
+			age;
+		}
+
+		var arr = [];
+
+		var b = new Banma();
+		b.name = "斑马先生";
+		b.age = 29;
+
+		arr[0] = b;
+
+		var name = arr[2].name;
+		var age = arr[2].age;
+		document.write(name +":" + age);
+
+		// 少年，仔细找原因哦
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+	//请分析 为什么 按键了 也无法 检测到
+	function whichButton(event)
+	{
+		alert(event.keyCode)
+	}
+
+</script>
+</head>
+
+<body onkeyup="whichButton(e)">
+<p><b>注释：</b>在测试这个例子时，要确保右侧的框架获得了焦点。</p>
+<p>在键盘上按一个键。消息框会提示出该按键的 unicode。</p>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+
+		var arr = [];
+
+		for(var i = 0;i < 2;i++){
+			var obj = new Object();
+			obj.name = prompt("请输入您的名字");
+			obj.age = prompt("请输入您的年龄");
+			obj.sex = prompt("请输入您的性别");
+
+			arr[i] = obj;
+		}
+
+
+		for(var i = 0;i < 2;i++){
+			var obj = arr[i];
+			document.write(obj.name + ":" + obj.age + ":"+ obj.sex + "<br/>");
+		}
+
+
+		// 少年，上面的代码其实是上一题的解答。哈哈哈啊哈哈
+		// 经过一个简单的例子，你会发现，利用对象结构的好处，很方便存储结构化数据。
+		// 为了让你更加深刻理解，那么我现在要求你，将 第7行 到 23行之间的代码 通过 多行注释给 注释掉
+		// 然后 将上面的代码 在下面开始 改写，要求就是 不能使用 对象的方式 来实现 以上类似的效果。
+		// 这么做的目的就是想让你知道，对象的好处。哈哈哈啊哈哈哈，同时也考验你的编程能力。
+	</script>
+</head>
+<body>
+
+</body>
+</html>

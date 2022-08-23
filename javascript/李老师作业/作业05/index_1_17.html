@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>纠错/编码规范题</title>
+	<script type="text/javascript">
+		function banma(a,b){
+			return a + b;
+		}
+
+
+		var f = function(){alert("你好");};
+
+		var result = banma(1,f);
+
+		alert(result);//请理解为什么警告框显示的是 1function(){alert("你好");} 这个结果
+	</script>
+</head>
+<body>
+
+</body>
+</html>

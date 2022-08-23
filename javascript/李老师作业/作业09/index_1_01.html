@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>纠错题</title>
+</head>
+<body>
+	<div class="banma"></div>
+	<h2 class="banma"></h2>
+	<h1 class="banma"></h1>
+	<span class="banma"></span>
+	<p class="banma"></p>
+</body>
+</html>
+
+<script type="text/javascript">
+	// 以下代码 并不能将 所有 样式为 banma的标签设置 东京斑马编程教室 的内容
+	// 请你调查原因，并修正。
+	var arr = document.getElementByClassName("banma");
+	for(var i = 0;i < arr.length ;i++){
+		arr[i].innerHTML = "东京斑马编程教室";
+	}
+</script>

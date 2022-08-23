@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+	// 以下代码会监控 按键 的事件，并将按下的按键值给alert提示出来了
+	// 现在，要求你更改如下代码，
+	// 只有用户是 按的 a ，w，s，d 这4个按钮的时候 才给与 alert提示。
+function whichButton(event)
+{
+	alert(event.keyCode)
+}
+
+</script>
+</head>
+
+<body onkeyup="whichButton(event)">
+<p><b>注释：</b>在测试这个例子时，要确保右侧的框架获得了焦点。</p>
+<p>在键盘上按一个键。消息框会提示出该按键的 unicode。</p>
+</body>
+
+</html>

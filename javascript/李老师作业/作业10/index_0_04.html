@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+请把鼠标移上来</div>
+
+<script>
+// 目前代码可以检测用户鼠标，感知以后并改变div的文本内容
+// 现在 需要你增强这个功能，要求不能仅能改变文字的同时，还需要能改变背景色
+// 背景色 的色值 任意。
+
+function mOver(obj) {
+  obj.innerHTML = "谢谢您"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "请把鼠标移上来"
+}
+</script>
+
+</body>
+</html>

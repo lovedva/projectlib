@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>编程题</title>
+	<script type="text/javascript" src="index_2_01.js"></script>
+	<script type="text/javascript">
+	
+		/*
+			嘿！是时候该展现你的真实实力了。
+			第5行，代码引入了一个json格式的对象，并赋值给了一个 town 变量。
+			你会发现在下面代码中，我已经给你写了一段循环代码，将这个对象的所有属性都遍历出来了。
+
+			现在要求是这样的，你观察json数据你会发现，其实是存储了一部分地理位置信息，并且你会发现
+			例如 河北省 这个数据，其实省级下面还有很多城市，那么正常工作中很有可能有这样的需求，就是说
+			
+			将这些数据加载到程序中（map集合），通过 一个名字 例如 河北省，就可以很方便的将河北省下所有的
+			城市明给列出来。
+
+		*/
+
+		// 
+		var map = new Map();
+
+		for(var p in town){//该循环会遍历town对象的所有属性
+			var obj = town[p];//通过属性名 获取 属性的值
+
+			//请在这里开始写代码，将province属性值的内容作为 map集合的key
+			//那么 map集合的 value 存储的肯定是复数城市，也就意味着value最好是 数组？
+			// 然后你需要将 例如 河北省 作为key的话，那么通过代码 map.get("河北省"),需要能返回 河北省 下的所有城市名的信息。
+			
+		}
+
+		// 以下2行代码，你不需要修改，网页打开以后希望在控制台里面看到 河北省 下的所有城市信息
+		var list = map.get("河北省");
+		console.log(list);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

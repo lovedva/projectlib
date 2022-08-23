@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>填空题</title>
+	<script type="text/javascript">
+		//请你优化以下代码
+		//要点： 函数的功能最小化
+		// 以下有一个程序，现在写错了。原本是想创建一个计算2个的和的函数，然后调用该函数计算，拿到返回值后进行判断的。
+		// 目前不符合要求，请您修改
+		
+		function add(num1,num2){
+			var sum =  num1 + num2;
+
+			if(sum > 120){
+				document.write("合格!");
+			}else{
+				document.write("不合格!");
+			}
+
+			return sum;
+		}
+
+		var a = prompt("请输入您的第1门成绩");
+		var b = prompt("请输入您的第2门成绩");
+
+		add(a,b);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
