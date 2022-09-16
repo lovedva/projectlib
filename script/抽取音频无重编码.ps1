@@ -1,8 +1,13 @@
+$ext="flv","mp4"
 
-ls *.flv,*mp4 | foreach{
-    Write-Output ($_.Name)
-    ffmpeg -i $_.Name -vn -acodec copy ($_.Name -replace "\.flv",".aac")
-
+Set-Location $PSScriptRoot
+foreach ($item in $ext){
+    Get-ChildItem $PSScriptRoot/*.$item | ForEach-Object{
+        Write-Output ($_.Name)
+        ffmpeg -i $_.Name -vn -acodec copy ($_.Name -replace "\.$item",".aac")
+    
+    }
 }
+
 
 pause
